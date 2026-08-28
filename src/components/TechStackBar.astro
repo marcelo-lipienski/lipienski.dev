@@ -1,0 +1,32 @@
+---
+const technologies = [
+  { name: 'PHP 5.x / 7.x → 8.4', category: 'Runtime' },
+  { name: 'Laravel & Lumen', category: 'Framework' },
+  { name: 'Symfony', category: 'Framework' },
+  { name: 'Zend / Laminas / CakePHP', category: 'Legacy Frameworks' },
+  { name: 'Vanilla & Custom PHP Monoliths', category: 'Architecture' },
+  { name: 'PHPUnit & Pest PHP', category: 'Testing' },
+  { name: 'PHPStan & Psalm', category: 'Static Analysis' },
+  { name: 'MySQL / PostgreSQL / Redis', category: 'Database' },
+  { name: 'Docker & CI/CD Pipelines', category: 'DevOps' },
+];
+---
+
+<section class="border-y border-slate-800/80 bg-slate-950/60 py-8">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center md:text-left md:flex md:items-center md:justify-between gap-6">
+      <div class="mb-4 md:mb-0 shrink-0">
+        <span class="text-xs font-mono font-semibold uppercase tracking-wider text-slate-400">
+          Specialized In Legacy Ecosystems
+        </span>
+      </div>
+      <div class="flex flex-wrap items-center justify-center md:justify-end gap-2.5 sm:gap-3">
+        {technologies.map((tech) => (
+          <span class="inline-flex items-center px-3 py-1 rounded-md text-xs font-mono bg-slate-900 border border-slate-800 text-slate-300 hover:border-slate-700 transition-colors">
+            {tech.name}
+          </span>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

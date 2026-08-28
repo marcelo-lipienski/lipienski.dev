@@ -1,0 +1,66 @@
+---
+const steps = [
+  {
+    step: '01',
+    title: 'Codebase Audit & Risk Assessment',
+    description:
+      'We begin with a thorough inspection of your codebase, dependencies, PHP version blockers, and database queries. You receive a clear, actionable modernization blueprint with estimated timelines and risk mitigations.',
+  },
+  {
+    step: '02',
+    title: 'Automated Test Harness & Safety Net',
+    description:
+      'Before touching complex business logic, I write automated characterization tests and integrate static analysis (PHPStan). This guarantees that regressions are caught immediately in CI.',
+  },
+  {
+    step: '03',
+    title: 'Incremental Upgrades & Refactoring Sprints',
+    description:
+      'We upgrade PHP versions and refactor fragile modules in small, verifiable pull requests. Your product team continues shipping everyday features without disruption.',
+  },
+  {
+    step: '04',
+    title: 'Performance Tuning & Team Knowledge Transfer',
+    description:
+      'We profile memory, optimize SQL queries, and benchmark runtime gains. I walk your team through the architectural improvements, documentation, and tooling.',
+  },
+];
+---
+
+<section id="approach" class="py-24 bg-slate-950/70 border-t border-slate-800/80">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span class="text-xs font-mono font-bold uppercase tracking-wider text-sky-400">
+        Proven Methodology
+      </span>
+      <h2 class="mt-3 text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+        A pragmatic, low-risk roadmap for modernization
+      </h2>
+      <p class="mt-4 text-base sm:text-lg text-slate-300">
+        No big-bang rewrites, no guesswork. An engineering-led process designed to modernize mission-critical systems safely.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      {steps.map((item) => (
+        <div class="relative p-6 sm:p-8 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition-all flex flex-col justify-between">
+          <div>
+            <div class="text-3xl font-mono font-extrabold text-sky-400/60 mb-4">
+              {item.step}
+            </div>
+            <h3 class="text-lg font-bold text-white tracking-tight mb-3">
+              {item.title}
+            </h3>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              {item.description}
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-800/60 flex items-center gap-1.5 text-xs font-mono text-slate-400">
+            <span class="w-1.5 h-1.5 rounded-full bg-sky-400"></span>
+            <span>Zero production downtime</span>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
