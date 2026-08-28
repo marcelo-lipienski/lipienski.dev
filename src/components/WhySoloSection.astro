@@ -1,0 +1,84 @@
+---
+const comparisons = [
+  {
+    feature: 'Who writes your code?',
+    solo: '100% senior engineering by me (the founder).',
+    agency: 'Pitched by senior leads, delegated to junior developers.',
+  },
+  {
+    feature: 'Communication & Alignment',
+    solo: 'Direct Slack/email access to the engineer solving the problem.',
+    agency: 'Account managers, project coordinators, and delayed feedback.',
+  },
+  {
+    feature: 'Approach to Legacy Code',
+    solo: 'Pragmatic, safe, incremental improvements in-place.',
+    agency: 'Frequently pushes expensive, risky full rewrites from scratch.',
+  },
+  {
+    feature: 'Ecosystem Specialization',
+    solo: 'Deep, battle-tested expertise in legacy PHP & modernization.',
+    agency: 'Generalist shops jumping between whichever framework is trending.',
+  },
+  {
+    feature: 'Accountability & Speed',
+    solo: 'Fast feedback loops, razor-sharp focus, minimal red tape.',
+    agency: 'Bureaucratic change orders, billable hours bloat, high turnover.',
+  },
+];
+---
+
+<section id="why-solo" class="py-24 bg-[#090D16] border-t border-slate-800/80">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span class="text-xs font-mono font-bold uppercase tracking-wider text-sky-400">
+        The Solo Advantage
+      </span>
+      <h2 class="mt-3 text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+        Why companies hire a solo senior specialist over an agency
+      </h2>
+      <p class="mt-4 text-base sm:text-lg text-slate-300">
+        When fixing high-stakes legacy systems, you need seasoned judgment and deep technical intuition—not bloated account teams.
+      </p>
+    </div>
+
+    <!-- Comparison Table -->
+    <div class="rounded-2xl border border-slate-800 bg-slate-950/80 overflow-hidden shadow-xl max-w-4xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-12 border-b border-slate-800 bg-slate-900/90 text-sm font-semibold">
+        <div class="p-4 md:col-span-4 text-slate-400 font-mono text-xs uppercase tracking-wider">Evaluation Factor</div>
+        <div class="p-4 md:col-span-4 text-sky-400 font-mono text-xs uppercase tracking-wider bg-sky-950/20 border-x border-slate-800">
+          Working With Me (Solo)
+        </div>
+        <div class="p-4 md:col-span-4 text-slate-400 font-mono text-xs uppercase tracking-wider">Traditional Agency</div>
+      </div>
+
+      <div class="divide-y divide-slate-800/80">
+        {comparisons.map((row) => (
+          <div class="grid grid-cols-1 md:grid-cols-12 text-sm items-center hover:bg-slate-900/30 transition-colors">
+            <div class="p-4 md:col-span-4 font-medium text-white border-b md:border-b-0 border-slate-800/60">
+              {row.feature}
+            </div>
+            <div class="p-4 md:col-span-4 text-slate-200 bg-sky-950/10 border-x border-slate-800 font-medium flex items-start gap-2">
+              <span class="text-emerald-400 font-bold">✔</span>
+              <span>{row.solo}</span>
+            </div>
+            <div class="p-4 md:col-span-4 text-slate-400 flex items-start gap-2">
+              <span class="text-rose-400/80 font-bold">✖</span>
+              <span>{row.agency}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- Highlight Quote / Personal Guarantee -->
+    <div class="mt-12 max-w-3xl mx-auto text-center p-8 rounded-2xl bg-slate-900/50 border border-slate-800/80">
+      <p class="text-base sm:text-lg italic text-slate-200 leading-relaxed">
+        &ldquo;My business model is simple: You get direct senior engineering that solves painful legacy problems with zero handoffs and complete transparency.&rdquo;
+      </p>
+      <div class="mt-4 font-mono text-sm text-sky-400 font-semibold">
+        &mdash; Marcelo Lipienski, Principal Engineer
+      </div>
+    </div>
+  </div>
+</section>

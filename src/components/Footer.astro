@@ -1,0 +1,68 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="border-t border-slate-800/80 bg-[#070A12] text-slate-400 py-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+      
+      <div class="md:col-span-2 space-y-3">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-md bg-slate-900 border border-slate-700 flex items-center justify-center font-mono text-sm font-bold text-sky-400">
+            &gt;_
+          </div>
+          <span class="text-base font-bold text-white tracking-tight">Marcelo Lipienski</span>
+        </div>
+        <p class="text-sm text-slate-400 max-w-md leading-relaxed">
+          Independent software engineering consultancy specialized in fixing, improving, and modernizing legacy PHP applications. Based in Brazil, serving clients globally.
+        </p>
+      </div>
+
+      <div>
+        <div class="text-xs font-mono font-bold uppercase tracking-wider text-slate-300 mb-3">Navigation</div>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#services" class="hover:text-sky-400 transition-colors">Services</a></li>
+          <li><a href="#problems" class="hover:text-sky-400 transition-colors">Common Problems</a></li>
+          <li><a href="#approach" class="hover:text-sky-400 transition-colors">Our Approach</a></li>
+          <li><a href="#why-solo" class="hover:text-sky-400 transition-colors">The Solo Advantage</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="text-xs font-mono font-bold uppercase tracking-wider text-slate-300 mb-3">Connect & Direct</div>
+        <ul class="space-y-2 text-sm">
+          <li>
+            <a href="mailto:marcelo@lipienski.dev" class="hover:text-sky-400 transition-colors flex items-center gap-1.5">
+              <span>marcelo@lipienski.dev</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/marcelo-lipienski" target="_blank" rel="noopener noreferrer" class="hover:text-sky-400 transition-colors">
+              GitHub Profile
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/marcelolipienski" target="_blank" rel="noopener noreferrer" class="hover:text-sky-400 transition-colors">
+              LinkedIn
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="pt-8 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
+      <div>
+        &copy; {currentYear} Marcelo Lipienski. All rights reserved.
+      </div>
+      <div class="flex items-center gap-4">
+        <span>Hosted on Cloudflare Pages</span>
+        <span>•</span>
+        <span class="text-emerald-400 flex items-center gap-1">
+          <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+          All Systems Operational
+        </span>
+      </div>
+    </div>
+  </div>
+</footer>
